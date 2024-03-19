@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+  mix-blend-mode: multiply;
+  flex-basis: 10%;
+}
+
+.nav_sec {
+  display: flex;
+  height: 150px;
+  background-color: antiquewhite;
+  color: rgb(31, 46, 59);
+  align-items: center;
+}
+
+.ul_list {
+  display: flex;
+  list-style: none;
+  flex-basis: 90%;
+  height: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+}
