@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0f0f0f;
+  color: white;
+}
+#logo {
+  width: 100px;
+}
+
+.container_1 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-areas:
+    "header header header "
+    "aside  main main "
+    "footer footer footer ";
+}
+
+.logo {
+  height: 90px;
+  display: flex;
+  margin-left: 14px;
+  align-items: center;
+  width: 150px;
+}
+
+.utube-logo {
+  width: 95px;
+  padding-left: 20px;
+}
+
+.menu-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 23px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.youtube-icon {
+  width: 90px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 16% 60% 24%;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background: #0f0f0f;
+  z-index: 1;
+}
+
+.main {
+  grid-area: main;
+  position: relative;
+  top: 73px;
+  height: 800px;
+}
+
+.aside {
+  grid-area: aside;
+  display: grid;
+  row-gap: 14px;
+  width: 18%;
+  margin-left: 10px;
+  margin-top: 12px;
+  height: 350px;
+  overflow: overlay;
+  scrollbar-color: #73737370 #0f0f0f;
+  position: fixed;
+  top: 70px;
+}
+.aside_1 {
+  display: grid;
+  grid-template-columns: 20% auto;
+  place-items: center;
+  column-gap: 10px;
+}
+.aside div p,
+.icon_1 {
+  justify-self: self-start;
+  font-size: 17px;
+  font-weight: 500;
+}
+.aside_1:hover {
+  cursor: pointer;
+  background-color: #73737370;
+  border-radius: 6px;
+}
+
+.aside_2 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 14px;
+}
+
+.you {
+  padding-left: 12px;
+  font-size: 17px;
+}
+
+.text_1 {
+  text-align: center;
+}
+#text_1 {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 10px;
+  width: 50%;
+  position: relative;
+}
+
+#search_1 {
+  text-align: center;
+}
+.search {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 80% 10% 10%;
+  justify-items: flex-end;
+}
+.searchinp {
+  background-color: #0f0f0f;
+  color: white;
+  display: flex;
+  width: 73%;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 20px;
+  border: 0.31px solid rgba(128, 128, 128, 0.423);
+  border-radius: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.search::placeholder {
+  font-size: 16px;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 68px;
+  border: 0.31px solid rgba(128, 128, 128, 0.423);
+  border-radius: 2px;
+  margin-left: -1px;
+  margin-right: 8px;
+  cursor: pointer;
+  background-color: #5c54548a;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.voice-icon {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: none;
+  border-color: rgba(221, 207, 207, 0.397);
+  cursor: pointer;
+  background-color: #5c54548a;
+  border: 1px solid gray;
+  justify-self: center;
+}
+.voice-icon:hover {
+  background-color: #737373a7;
+  cursor: pointer;
+}
+#sec_1 {
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+}
+#sec_1 img {
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 30px;
+  align-items: center;
+  margin: 12px 0;
+}
+.nav .class {
+  padding: 6px;
+  border-radius: 6px;
+  background: #73737370;
+}
+.nav .class:hover {
+  background-color: #737373a7;
+  cursor: pointer;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 10px;
+}
+.banner img {
+  width: 95%;
+  cursor: pointer;
+}
+
+.footer {
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #0f0f0f;
+}
+
+.footer nav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  list-style-type: none;
+}
+.footer nav ul li {
+  flex-grow: 0.02;
+}
+.fst_1 {
+  padding-top: 20px;
+  word-spacing: 4px;
+  font-size: 1.2rem;
+}
+
+.footer p {
+  margin: 15px 0;
+}
